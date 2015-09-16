@@ -1,20 +1,19 @@
 ---
 layout: workshop
 root: .
-venue: FIXME      # brief name of host site without address (e.g., "Euphoric State University")
-address: FIXME    # street address of workshop (e.g., "123 Forth Street, Blimingen, Euphoria")
-country: FIXME    # country (two-letter ISO code such as "fr" - see https://en.wikipedia.org/wiki/ISO_3166-1)
-language: FIXME   # language (two-letter ISO code such as "fr" - see https://en.wikipedia.org/wiki/ISO_639-1)
-latlng: FIXME     # fractional latitude and longitude (e.g., 41.7901128,-87.6007318)
-humandate: FIXME  # human-readable date (e.g., 'Feb 17-18, 2020' without the quotes)
-humantime: FIXME  # human-readable time (e.g., '9:00 am - 4:30 pm' without the quotes)
-startdate: FIXME  # use YYYY-MM-DD format like 2015-01-01
-enddate: FIXME    # use YYYY-MM-DD format like 2015-01-02
-instructor: FIXME # list of names like ["Kay McNulty", "Betty Jennings", "Betty Snyder"]
-helper: FIXME     # list of names like ["Marlyn Wescoff", "Fran Bilas", "Ruth Lichterman"]
-contact: FIXME    # contact email address for workshop organizer, such as 'grace@hopper.org' (without the quotes)
-etherpad:         # optional (insert the URL for your Etherpad if you're using one)
-eventbrite:       # optional (insert the alphanumeric key for Eventbrite registration, e.g., 1234567890AB)
+venue: FUniversity of Hawaii at Manoa
+address: Information Technology Center (street address of home location)
+country: US
+language: en
+latlng: 21.299816,-157.817579
+humandate: Oct 19-20, 2015
+humantime: 9:00 am - 4:00 pm
+startdate: 2015-10-19
+enddate: 2015-10-20
+instructor: ["Sean Cleveland", "Ron Merrill"]
+helper: ["David Schanzenbach"]
+contact: 'seanbc@hawaii.edu'
+etherpad:  https://etherpad.mozilla.org/2015-10-19-UH-SWC
 ---
 <!--
   HEADER
@@ -31,7 +30,7 @@ eventbrite:       # optional (insert the alphanumeric key for Eventbrite registr
   'eventbrite' has been set in the header.  You can delete it if you
   are not using Eventbrite, or leave it in, since it will not be
   displayed if the 'eventbrite' field in the header is not set.
--->
+
 {% if page.eventbrite %}
 <iframe
   src="https://www.eventbrite.com/tickets-external?eid={{page.eventbrite}}&ref=etckt"
@@ -41,7 +40,7 @@ eventbrite:       # optional (insert the alphanumeric key for Eventbrite registr
   scrolling="auto">
 </iframe>
 {% endif %}
-
+-->
 <h2>General Information</h2>
 
 <!--
@@ -51,12 +50,27 @@ eventbrite:       # optional (insert the alphanumeric key for Eventbrite registr
   the pitch.
 -->
 <p>
+We are please to announce that the registration for our Software Carpentry Workshop (http://software-carpentry.org/) 
+is now open. 
+
   <a href="{{site.swc_site}}">Software Carpentry</a>'s mission
   is to help scientists and engineers get more research done in less
   time and with less pain by teaching them basic lab skills for
-  scientific computing.  This hands-on workshop will cover basic
-  concepts and tools, including program design, version control, data
-  management, and task automation.  Participants will be encouraged to
+  scientific computing.  This course is aimed at graduate students and researchers in the life sciences field and covers 
+the following core scientific computing skills:
+</p>
+<p>
+  <ul>
+<li>The Unix (Linux/Mac) shell</li>
+<li>Introduction to programming in Python </li>
+<li>Tracking changes and sharing work efficiently using Git and GitHub </li>
+</ul>
+
+</p>
+
+<p>
+
+Participants will be encouraged to
   help one another and to apply what they have learned to their own
   research problems.
 </p>
@@ -77,10 +91,7 @@ eventbrite:       # optional (insert the alphanumeric key for Eventbrite registr
 <p>
   <strong>Who:</strong>
   The course is aimed at graduate students and other researchers.
-  <strong>You don't need to have any previous knowledge of the tools that will
-    be presented at the workshop.</strong>
 </p>
-
 <!--
   LOCATION
 
@@ -112,7 +123,10 @@ eventbrite:       # optional (insert the alphanumeric key for Eventbrite registr
   Software Carpentry's
   <a href="{{site.swc_site}}/conduct.html">Code of Conduct</a>.
 </p>
-
+<p>
+  <strong><a href="https://docs.google.com/a/hawaii.edu/forms/d/10pPMKXZcFix8xN2-4LZ-uM3akZeHSBy1oFRXQcMKNF0/viewform?usp=send_form">Registrater</a></strong>
+  The course is aimed at graduate students and other researchers. 
+</p>
 <!--
   CONTACT EMAIL ADDRESS
 
@@ -144,26 +158,122 @@ eventbrite:       # optional (insert the alphanumeric key for Eventbrite registr
 
 <div class="row">
   <div class="col-md-6">
-    <h3>Day 1</h3>
-    <table class="table table-striped">
-      <tr> <td>09:00</td>  <td>Automating tasks with the Unix shell</td> </tr>
-      <tr> <td>10:30</td> <td>Coffee</td> </tr>
-      <tr> <td>12:00</td>  <td>Lunch break</td> </tr>
-      <tr> <td>13:00</td>  <td>Building programs with Python</td> </tr>
-      <tr> <td>14:30</td>  <td>Coffee</td> </tr>
-      <tr> <td>16:00</td>  <td>Wrap-up</td> </tr>
-    </table>
-  </div>
-  <div class="col-md-6">
-    <h3>Day 2</h3>
-    <table class="table table-striped">
-      <tr> <td>09:00</td>  <td>Version control with Git</td> </tr>
-      <tr> <td>10:30</td>  <td>Coffee</td> </tr>
-      <tr> <td>12:00</td>  <td>Lunch break</td> </tr>
-      <tr> <td>13:00</td>  <td>Managing data with SQL</td> </tr>
-      <tr> <td>14:30</td>  <td>Coffee</td> </tr>
-      <tr> <td>16:00</td>  <td>Wrap-up</td> </tr>
-    </table>
+
+
+<h3>Day 1</h3>
+<table class="table table-striped">
+<tr>
+    <td> <b>When</b>               </td>
+    <td> <b>What</b>         </td>
+    <td> <b>Who</b> </td>
+</tr>
+<tr>
+    <td> 8:30-9:00      </td>
+    <td>  Set Up</td>
+    <td> All             </td>
+</tr>
+<tr>
+    <td> 9:00-9:30      </td>
+    <td><a href="{{site.github.url}}/intro.html">Introduction</a></td>
+    <td> Neem Serra       </td>
+</tr>
+<tr>
+    <td> 9:30-10:30     </td>
+    <td><a href="http://swcarpentry.github.io/shell-novice/">Shell</a> </td>
+    <td> TBD </td>
+</tr>
+<tr>
+    <td> 10:30-10:45    </td>
+    <td>  Break  </td>
+    <td> All             </td>
+</tr>
+<tr>
+    <td> 10:45-12:00    </td>
+    <td>  Shell  </td>
+    <td> TBD </td>
+</tr>
+<tr>
+    <td> 12:00-1:00    </td>
+    <td>  Lunch  </td>
+    <td> All </td>
+</tr>
+<tr>
+    <td> 1:00-2:30     </td>
+    <td><a href="http://swcarpentry.github.io/git-novice/">Git Local</a>  </td>
+    <td> TBD </td>
+</tr>
+<tr>
+    <td> 2:30-2:45      </td>
+    <td>  Break  </td>
+    <td> All </td>
+</tr>
+<tr>
+    <td> 2:45-4:00      </td>
+    <td><a href="http://swcarpentry.github.io/git-novice/">Git Remote</a></td>
+    <td> TBD </td>
+</tr>
+<tr>
+    <td> 4:00-4:15     </td>
+    <td>  Questions  </td>
+    <td> All </td>
+</tr>
+</table>
+
+
+<h3>Day 2</h3>
+<table class="table table-striped">
+<tr>
+    <td> <b>When</b>               </td>
+    <td> <b>What</b>          </td>
+    <td> <b>Who</b> </td>
+</tr>
+<tr>
+    <td> 9:00-9:15      </td>
+    <td>  Review  </td>
+    <td> All             </td>
+</tr>
+<tr>
+    <td> 9:15-10:30     </td>
+    <td> <a href="http://swcarpentry.github.io/python-novice-inflammation"> Intro Python </a> </td>
+    <td> TBD </td>
+</tr>
+<tr>
+    <td> 10:30-10:45    </td>
+    <td>  Break</td>
+    <td> All             </td>
+</tr>
+<tr>
+    <td> 10:45-12:00    </td>
+    <td> <a href="http://swcarpentry.github.io/python-novice-inflammation"> Intro Python </a></td>
+    <td> TBD </td>
+</tr>
+<tr>
+    <td> 12:00-1:00     </td>
+    <td>  Lunch</td>
+    <td> All </td>
+</tr>
+<tr>
+    <td> 1:00-2:30     </td>
+    <td> <a href="http://swcarpentry.github.io/python-novice-inflammation"> Intro Python </a></td>
+    <td> TBD </td>
+</tr>
+<tr>
+    <td> 2:30-2:45     </td>
+    <td>  Break</td>
+    <td> All </td>
+</tr>
+<tr>
+    <td> 2:45-4:00      </td>
+    <td>  <a href="{{site.github.url}}/reproducible_workflow/index.html"> Putting it
+    all together </a> </td>
+    <td> TBD </td>
+</tr>
+<tr>
+    <td> 4:00-4:15      </td>
+    <td>  Questions</td>
+    <td> All </td>
+</tr>
+</table>
   </div>
 </div>
 
@@ -220,7 +330,7 @@ eventbrite:       # optional (insert the alphanumeric key for Eventbrite registr
       <li>Looping over files</li>
       <li>Creating and running shell scripts</li>
       <li>Finding things</li>
-      <li><a href="{{site.swc_githubio}}/shell-novice/reference.html">Reference...</a></li>
+      <li><a href="{{site.swc_lessons}}/ref/01-shell.html">Reference...</a></li>
     </ul>
   </div>
   <div class="col-md-6">
@@ -233,7 +343,7 @@ eventbrite:       # optional (insert the alphanumeric key for Eventbrite registr
       <li>Loops and conditionals</li>
       <li>Defensive programming</li>
       <li>Using Python from the command line</li>
-      <li><a href="{{site.swc_githubio}}/python-novice-inflammation/reference.html">Reference...</a></li>
+      <li><a href="{{site.swc_lessons}}/ref/03-python.html">Reference...</a></li>
     </ul>
   </div>
   <!--
@@ -263,7 +373,7 @@ eventbrite:       # optional (insert the alphanumeric key for Eventbrite registr
       <li>Resolving conflicts</li>
       <li>Open licenses</li>
       <li>Where to host work, and why</li>
-      <li><a href="{{site.swc_githubio}}/git-novice/reference.html">Reference...</a></li>
+      <li><a href="{{site.swc_lessons}}/ref/02-git.html">Reference...</a></li>
     </ul>
   </div>
   <div class="col-md-6">
@@ -302,6 +412,10 @@ eventbrite:       # optional (insert the alphanumeric key for Eventbrite registr
   To participate in a Software Carpentry workshop, you will need
   access to the software described below. In addition, you will
   need an up-to-date web browser.
+
+  Once you are done installing the software listed below,
+  please go to <a href="setup/index.html">this page</a>,
+  which has instructions on how to test that everything was installed correctly.
 </p>
 <p>
   We maintain a list of common issues that occur during installation as a reference for instructors
