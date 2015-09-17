@@ -2,7 +2,7 @@
 layout: workshop
 title: "Software Carpentry: Introduction"
 root: .
-datetime: June 2015
+datetime: Oct 2015
 website: http://software-carpentry.org
 ---
 <section>
